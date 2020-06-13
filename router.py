@@ -13,7 +13,7 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     bot.send_message(message.chat.id, aue())
-    print(message)
+    print(message.json.text)
 
 
 bot.polling()
