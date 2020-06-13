@@ -15,7 +15,7 @@ def text_fix():
 
 
 def aue():
-    with open('D:/Projects/CODAME_PROJECTS/markov_chains/auf.txt', encoding='utf-8') as f:
+    with open('./auf.txt', encoding='utf-8') as f:
         text = f.read()
     text_model = markovify.Text(text, state_size=2)
     for i in range(20):
